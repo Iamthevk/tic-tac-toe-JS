@@ -8,6 +8,11 @@ body{
     height: 100vh;   
 }
 
+#info{
+    font-size: 20px;
+    font-weight: bold;
+
+}
 #gameboard{
     width: 390px;
     height: 390px;
@@ -25,6 +30,7 @@ body{
  display: flex;
  justify-content: center;
  align-items: center;
+ cursor: pointer;
 }
 
 .circle{
@@ -34,4 +40,28 @@ body{
     border-radius: 50%;
     box-sizing: border-box;
 
+}
+
+.cross{
+    height: 110px;
+    width: 110px;
+    position: relative;
+    rotate: 45deg;
+}
+.cross::before, .cross::after{
+    content: "";
+    position: absolute;
+    background-color: red;
+}
+.cross::before{
+    left: 50%;
+    width: 30%;
+    margin-left: -15%;
+    height: 100%;
+}
+.cross::after{
+    top: 50%;
+    height: 30%;
+    margin-top: -15%;
+    width: 100%;
 }
