@@ -5,7 +5,8 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column; 
-    height: 100vh;   
+    height: 100vh;
+    background-color: #f2f7f5;
 }
 
 #info{
@@ -24,7 +25,7 @@ body{
 .square{
  width: 130px;
  height: 130px;
- background-color: white;
+ background-color: #e8e4e6;
  border: solid 1px black;
  box-sizing: border-box;
  display: flex;
@@ -36,7 +37,7 @@ body{
 .circle{
     height: 110px;
     width: 110px;
-    border: 20px solid blue;
+    border: 20px solid #6246ea;
     border-radius: 50%;
     box-sizing: border-box;
 
@@ -51,7 +52,7 @@ body{
 .cross::before, .cross::after{
     content: "";
     position: absolute;
-    background-color: red;
+    background-color: #e45858;
 }
 .cross::before{
     left: 50%;
